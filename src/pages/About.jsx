@@ -9,7 +9,7 @@ function About() {
     <div className="about-hero-container">
       {/* LEFT CARD */}
       <div className="about-card">
-        <img src={profileImg} alt="Tharun Raj" className="about-card-img" />
+        <img src={profileImg} alt="Praveen" className="about-card-img" />
         <div className="about-card-info">
           <p>Praveen D</p>
           <p>Base in Chennai, India</p>
