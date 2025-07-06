@@ -3,13 +3,14 @@ import './About.css';
 import profileImg from '../assets/myimg.jpg'; // replace with your image path
 import { FaInstagram, FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import AnimatedCounter from "../components/AnimatedCounter";
+import VisitorCount from '../components/VisitorCount';
 
 function About() {
   return (
     <div className="about-hero-container">
       {/* LEFT CARD */}
       <div className="about-card">
-        <img src={profileImg} alt="Tharun Raj" className="about-card-img" />
+        <img src={profileImg} alt="Praveen" className="about-card-img" />
         <div className="about-card-info">
           <p>Praveen D</p>
           <p>Base in Chennai, India</p>
@@ -63,6 +64,7 @@ function About() {
 >
   📄 Resume
 </a>
+<VisitorCount/>
 
   </div>
 
@@ -75,6 +77,7 @@ function About() {
         <AnimatedCounter target={0} />
         <p>PROJECTS COMPLETED</p>
       </div>
+      
     </div>
 
 </div>
