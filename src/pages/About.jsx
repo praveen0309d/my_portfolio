@@ -74,7 +74,7 @@ function About() {
         <p>YEARS OF LEARNING & BUILDING</p>
       </div>
       <div>
-        <AnimatedCounter target={0} />
+        <AnimatedCounter target={5} />
         <p>PROJECTS COMPLETED</p>
       </div>
       
