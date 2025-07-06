@@ -218,6 +218,11 @@
   .about-stats {
     justify-content: center;
   }
+
+  .about-card{
+    margin-top: 1vh;
+
+  }
 }
 
 
