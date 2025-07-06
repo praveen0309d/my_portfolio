@@ -1,0 +1,233 @@
+/* Base container styling */
+.about-hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 40px auto 0;
+  color: #fff;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.315);
+  backdrop-filter: blur(1px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.3s;
+}
+
+/* Subtle hover lift on desktop */
+.about-hero-container:hover {
+  transform: scale(1.01);
+}
+
+.about-card {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 255, 198, 0.15);
+}
+
+.about-card-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.about-card-info p {
+  margin: 5px 0;
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+.about-social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.about-social-icons a {
+  color: #00ffd5;
+  font-size: 1.4rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.about-social-icons a:hover {
+  transform: scale(1.2);
+  color: #00cca8;
+}
+
+.about-hire-button {
+  background: #00ffd5;
+  border: none;
+  border-radius: 50px;
+  color: #000;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.about-hire-button:hover {
+  background: #00cca8;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 255, 198, 0.4);
+}
+
+.about-hero-content {
+  flex: 1;
+  max-width: 550px;
+  color: #e0f7fa;
+  text-align: left;
+}
+
+.about-introduce {
+  color: #00ffc6;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.about-hero-content h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.about-hero-content .accent {
+  color: #00ffc6;
+}
+
+.about-bio {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #e0f7fa;
+}
+
+.about-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 1.8rem;
+}
+
+.about-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 255, 198, 0.15);
+  color: #00ffc6;
+  border: 1px solid #00ffc6;
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.about-button:hover {
+  background: #00ffc6;
+  color: #0a0a1e;
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 4px 14px rgba(0, 255, 198, 0.4);
+}
+
+.about-stats {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.about-stats div {
+  flex: 1;
+  min-width: 120px;
+  background: rgba(10, 10, 30, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 0.8rem 1rem;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 3px 12px rgba(0, 255, 198, 0.05);
+}
+
+.about-stats div:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 255, 198, 0.12);
+}
+
+.about-stats h2 {
+  color: #00ffc6;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.about-stats p {
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  color: #e0f7fa;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .about-hero-container {
+    flex-direction: column;
+    padding: 30px 15px;
+    gap: 25px;
+    margin-top: 20px;
+  }
+
+  .about-hero-content h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .about-bio {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  .about-hero-content {
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .about-links {
+    justify-content: center;
+  }
+
+  .about-stats {
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .about-hero-content h1 {
+    font-size: 1.5rem;
+  }
+  .about-bio {
+    font-size: 0.95rem;
+  }
+  .about-links {
+    justify-content: center;
+  }
+}

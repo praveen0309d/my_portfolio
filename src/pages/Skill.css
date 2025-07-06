@@ -1,0 +1,96 @@
+/* src/pages/Skill.css */
+
+.skill-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: rgba(0, 0, 0, 0.315);
+  backdrop-filter: blur(1px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.3s;
+}
+
+.skill-header {
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.skill-header span {
+  color: #00ffc6;
+}
+
+.skill-section {
+  margin-bottom: 40px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.skill-section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.skill-category {
+  font-size: 1.2rem;
+  color: #00ffc6;
+  margin-bottom: 20px;
+  font-weight: 600;
+  border-left: 4px solid #00ffc6;
+  padding-left: 10px;
+}
+
+.skill-bar-container {
+  margin-bottom: 20px;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  color: #e0f7fa;
+}
+
+.skill-bar {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  height: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 6px 0;
+}
+
+.skill-bar-fill {
+  background: linear-gradient(90deg, #00bfff, #00ffc6);
+  height: 100%;
+  width: 0%;
+  transition: width 1.2s ease;
+}
+
+.skill-description {
+  font-size: 0.85rem;
+  color: #c0e8f8;
+  line-height: 1.4;
+}
+
+@media (max-width: 600px) {
+  .skill-header {
+    font-size: 1.5rem;
+  }
+
+  .skill-category {
+    font-size: 1rem;
+  }
+
+  .skill-info {
+    font-size: 0.9rem;
+  }
+
+  .skill-description {
+    font-size: 0.8rem;
+  }
+}

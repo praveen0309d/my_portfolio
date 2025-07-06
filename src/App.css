@@ -1,0 +1,82 @@
+/* Reset & base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: transparent;
+  color: #f0f0f0; /* light text */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+/* Link styles */
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #00ffc6; /* highlight on hover */
+}
+
+/* Main app container to respect NavBar height */
+.app-container {
+  padding-top: 70px; /* leave space for fixed NavBar */
+  min-height: calc(100vh - 70px);
+}
+
+/* Heading styling for consistency */
+h1, h2, h3, h4, h5, h6 {
+  color: #00ffc6; /* accent color for headings */
+  margin-bottom: 0.5rem;
+}
+
+/* Paragraph styling */
+p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+/* Button base styling (optional) */
+button {
+  background-color: #00ffc6;
+  color: #0a0a0a;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #00cfa5;
+}
+
+/* Image default styling (optional) */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

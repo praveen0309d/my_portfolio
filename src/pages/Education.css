@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --accent: #00ffc6;
+  --glass-bg: rgba(255, 255, 255, 0.02);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --text-light: #e0f7fa;
+}
+
+.edu-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.edu-header {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--text-light);
+  margin-bottom: 40px;
+}
+
+.edu-header span {
+  color: var(--accent);
+}
+
+.edu-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.edu-timeline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(1px);
+  border-radius: 15px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.edu-timeline-item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.edu-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 8px;
+  flex-shrink: 0;
+}
+
+.edu-content {
+  color: var(--text-light);
+}
+
+.edu-content h3 {
+  font-size: 1.2rem;
+  margin: 0 0 5px 0;
+  color: var(--accent);
+}
+
+.edu-content h4 {
+  font-size: 1rem;
+  margin: 0 0 10px 0;
+  font-weight: 500;
+  color: #ffffffd0;
+}
+
+.edu-content p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #ffffffb3;
+}
+
+.edu-date {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #ffffff88;
+  background: rgba(0, 255, 198, 0.1);
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .edu-timeline-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .edu-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .edu-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .edu-content h4 {
+    font-size: 0.95rem;
+  }
+
+  .edu-content p {
+    font-size: 0.9rem;
+  }
+}
