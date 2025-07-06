@@ -13,7 +13,7 @@ function Education() {
       institution: "Velammal Engineering College, Chennai (Anna University)",
       description:
         "Currently pursuing a Bachelor's degree in Artificial Intelligence and Data Science with a CGPA of 7.8. Gained hands-on experience in full-stack development using React, Spring Boot, and MySQL. Actively participated in technical events and hackathons to enhance problem-solving and collaboration skills.",
-      date: "Aug 2022 ➔ Present",
+      date: "Sep 2023 ➔ Present",
     },
     {
       img: schoolLogo,
