@@ -11,27 +11,27 @@ function Portfolio() {
       await new Promise((resolve) => setTimeout(resolve, 1500)); // simulate loading
 
       const fetchedData = [
-        {
-          title: "Personal Portfolio",
-          description: "A 3D animated, clean, and responsive React + Three.js portfolio to showcase my skills, certificates, and projects.",
-          image: "/images/portfolio1.jpg",
-          link: "https://your-portfolio-link.com",
-          tech: ["React", "Three.js", "Tailwind"],
-        },
-        {
-          title: "E-Commerce Web App",
-          description: "A full-stack e-commerce platform with product listings, cart, payment integration, and admin panel.",
-          image: "/images/portfolio2.jpg",
-          link: "https://your-ecommerce-link.com",
-          tech: ["React", "Spring Boot", "MySQL"],
-        },
-        {
-          title: "Chat App",
-          description: "A real-time chat application with authentication and user management.",
-          image: "/images/portfolio3.jpg",
-          link: "https://your-chat-app-link.com",
-          tech: ["React", "Socket.io", "Node.js"],
-        },
+        // {
+        //   title: "Personal Portfolio",
+        //   description: "A 3D animated, clean, and responsive React + Three.js portfolio to showcase my skills, certificates, and projects.",
+        //   image: "/images/portfolio1.jpg",
+        //   link: "https://your-portfolio-link.com",
+        //   tech: ["React", "Three.js", "Tailwind"],
+        // },
+        // {
+        //   title: "E-Commerce Web App",
+        //   description: "A full-stack e-commerce platform with product listings, cart, payment integration, and admin panel.",
+        //   image: "/images/portfolio2.jpg",
+        //   link: "https://your-ecommerce-link.com",
+        //   tech: ["React", "Spring Boot", "MySQL"],
+        // },
+        // {
+        //   title: "Chat App",
+        //   description: "A real-time chat application with authentication and user management.",
+        //   image: "/images/portfolio3.jpg",
+        //   link: "https://your-chat-app-link.com",
+        //   tech: ["React", "Socket.io", "Node.js"],
+        // },
       ];
 
       setPortfolioData(fetchedData);
